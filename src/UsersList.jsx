@@ -4,6 +4,7 @@ const UsersList = () =>{
 
     const [users, setUsers] = useState ([])
     const [ubicacion, setUbicacion] = useState([])
+
     const paginaApi="https://randomuser.me/api/?results=5"
 
     useEffect(() => {
@@ -21,13 +22,14 @@ const UsersList = () =>{
                 {users.map(user => <li>{user.name.first}</li>)}
             </ul>
             <ul> 
-                {ubicacion.map(ubicacion => <li>{ubicacion.picture.first}</li>)}
+                {users.map(user => <li>{user.location.city}</li>)}
             </ul>
             <ul> 
-                {users.map(user => <li>{user.picture.first}</li>)}
-            </ul>  <ul> 
-                {users.map(user => <li>{user.picture.first}</li>)}
-            </ul>
+                {users.map(user => <li>{user.location.state}</li>)}
+            </ul>  
+            <div> 
+                {users.map(user => <img src={user.picture.large}/>)}
+            </div>
         </div>
     )
 
