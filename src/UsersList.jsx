@@ -4,6 +4,8 @@ const UsersList = () =>{
 
     const [users, setUsers] = useState ([])
     const [ubicacion, setUbicacion] = useState([])
+    const [] = useState([])
+    const [] = useState([])
 
     const paginaApi="https://randomuser.me/api/?results=5"
 
