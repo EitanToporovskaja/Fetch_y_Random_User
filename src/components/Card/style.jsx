@@ -1,30 +1,80 @@
 export const style = {
-  
-    article:{
-       display:"flex",
-       width:"30%",
-       margin:"2%",
-       flexDirection:"column",
-       justifyContent:"start",
-       borderRadius: '3%',
-       marginBottom: '20px',
-       background:"white"
-     },
-     photo: {
-       width: '100%',
-       height: '300px',
-       borderRadius: '2%',
-     },
-    div:{
-       display:"flex",
-       flexDirection:"column",
-       backGroundColor:"white",
-       width:"100%",
-       padding:"2%",
-     }
-   ,
-   p:{
-       margin:"1px",
-       fontSize:"20px"
-   }
-   }
+  article: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '10px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    marginBottom: '10px',
+  },
+  photo: {
+    width: '50px',
+    height: '50px',
+    borderRadius: '50%',
+    marginRight: '10px',
+  },
+  div: {
+    flex: '1',
+  },
+  p: {
+    margin: '0',
+  },
+  modal: {
+    position: 'fixed',
+    zIndex: '1',
+    left: '0',
+    top: '0',
+    width: '100%',
+    height: '100%',
+    overflow: 'auto',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  modalContent: {
+    backgroundColor: '#fefefe',
+    margin: '15% auto',
+    padding: '20px',
+    border: '1px solid #888',
+    width: '80%',
+    borderRadius: '5px',
+    position: 'relative',
+  },
+  close: {
+    color: '#aaa',
+    float: 'right',
+    fontSize: '28px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+  },
+  modalContainer: {
+    position: 'fixed',
+    zIndex: '1',
+    left: '0',
+    top: '0',
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backdropFilter: 'blur(5px)', // Efecto de desenfoque en el fondo
+    backgroundColor: 'rgba(0,0,0,0.3)', // Color de fondo semitransparente
+  },
+  modalContent: {
+    backgroundColor: '#fefefe',
+    padding: '20px',
+    border: '1px solid #888',
+    width: '30%',
+    borderRadius: '5px',
+    position: 'relative',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+  },
+  close: {
+    position: 'absolute',
+    top: '5px',
+    right: '10px',
+    color: '#aaa',
+    fontSize: '20px',
+    cursor: 'pointer',
+  },
+
+};
